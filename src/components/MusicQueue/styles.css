@@ -1,0 +1,93 @@
+.playlist {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 640px) {
+        display:none;
+      }
+}
+.tab-name p {
+    color: #fff;
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+.search-box input {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.0006);
+    border: 0;
+    outline: none;
+    font-size: 16px;
+}
+.music-list{
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 32px; */
+    overflow-y: scroll;
+    /* background-color: red; */
+}
+.music-div{
+    min-height: 50px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 8px;
+   
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+.photo{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.music-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 70px);
+    @media screen and (max-width: 640px) {
+        width: 70%;
+      }
+}
+.music-name{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    overflow: hidden;
+}
+.music-name p{
+  margin: 0;
+}
+.music-text{
+    color: #FFF;
+    font-size: 18px;
+}
+.artist-name{
+    color: #FFF;
+    opacity: 0.6;
+    font-size: 14px;
+}
+.time{
+    color: #FFF;
+    opacity: 0.6;
+    font-size: 18px;
+}

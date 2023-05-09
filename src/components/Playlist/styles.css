@@ -1,0 +1,31 @@
+.sidebar{
+    width: 20%;
+    height: 100%;
+    padding-left: 32px;
+    @media screen and (max-width: 640px) {
+        display:none;
+      }
+}
+.nav-items{
+    margin-top: 16px;
+}
+.nav-items p{
+   color: #FFF;
+   font-size: 20px;
+   line-height: 32px;
+   opacity:0.4;
+}
+.nav-items p:hover{
+    cursor: pointer;
+}
+.user-pic{
+    position: absolute;
+    bottom: 32px;
+}
+.loader-div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

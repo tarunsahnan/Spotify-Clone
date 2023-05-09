@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'BCRegular';
+       src: url('./assets/fonts//BasierCircle-Regular.ttf') format('truetype');
+ }
+
+ @font-face {
+    font-family: 'BCBold';
+       src: url('./assets/fonts//BasierCircle-Regular.ttf') format('truetype');
+ }
+
+.App{
+    background-image:linear-gradient(rgba(32, 22, 6, 1),rgba(0, 0, 0, 1));
+    height: calc(100vh - 32px);
+    width: 100%;
+    padding-top: 32px;
+    display: flex;
+    overflow: hidden;
+}
+
+.bcRegularFont{
+    font-family: "BCRegular";
+    font-weight: 400;
+}
+
+.bcBoldFont{
+    font-family: "BCBold";
+    font-weight: 700;
+}

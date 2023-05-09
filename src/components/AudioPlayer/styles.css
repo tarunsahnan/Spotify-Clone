@@ -1,0 +1,122 @@
+.player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    @media screen and (max-width: 640px) {
+        width: 100%;
+        padding:20px;
+      }
+}
+.top-div {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.music-name {
+    color: #FFF;
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    width: 400px;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+    white-space: nowrap;
+    @media screen and (max-width: 640px) {
+        width:250px;
+      }
+}
+.artist-name{
+    color: #FFF;
+    opacity: 0.6;
+    font-size: 16px;
+}
+.seeker{
+    margin-top: 24px;
+    background-color: #FFFFFF;
+    opacity: 0.2;
+    height: 6px;
+    width: 100%;
+    border-radius: 16px;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    height: 85%;
+    /* overflow-y:scroll ; */
+}
+.circle{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control-middle-div{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+
+
+/* seekbar */
+/* Input range - chrome and safari */
+
+input[type="range"] {
+    --range-progress: 0;
+    -webkit-appearance: none;
+    position: relative;
+    background:rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 6px;
+    /* opacity: 0.2; */
+    border-radius: 16px;
+    cursor: pointer;
+   
+
+  }
+  
+  /* played progress length - Chrome & safari*/
+  input[type="range"]::before {
+    content: '';
+    height: 6px;
+    background-color:#FFF;
+    width: var(--range-progress);
+    border-radius: 16px;
+    position: relative; 
+    top: 0;
+    left: 0;
+    display: inline-block;
+    transform: translateY(-6px);
+  }
+  
+  
+  
+  /* slider thumb - chrome and safari */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 6px;
+    width: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    display: block;
+
+  }
+  
+  
+  
+ 
